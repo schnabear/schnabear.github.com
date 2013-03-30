@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "Open Sans Light";
+    src: url('OpenSans-Light.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Open Sans Regular";
+    src: url('OpenSans-Regular.ttf') format("truetype");
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    text-align: center;
+    font-family: "Open Sans Light", "Helvetica Neue", "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+    font-size: 13px;
+    line-height: 150%;
+}
+
+#container {
+    margin: 0 auto 18px;
+    width: 780px;
+    min-height: 100%;
+}
+
+#header {
+    border-width: 0 1px 1px;
+    border-style: solid;
+    border-color: #d3d3d3;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 3px #d9d9d9;
+}
+#header p {
+    padding: 12px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#pong {
+    border: 1px solid #d3d3d3;
+    padding: 5px;
+    background: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 0px;
+}
+
+#blab {
+    padding: 0;
+}
+#blab #avatar {
+    display: inline-block;
+    position: relative;
+    border: 1px solid #d3d3d3;
+    margin: 4px;
+    z-index: 1;
+    transform: rotate(-5deg);
+    -ms-transform:rotate(-5deg); /* IE 9 */
+    -moz-transform:rotate(-5deg); /* Firefox */
+    -webkit-transform:rotate(-5deg); /* Safari and Chrome */
+    -o-transform:rotate(-5deg); /* Opera */
+}
+#blab #avatar:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    top: -6px;
+    left: -6px;
+    width: 130px;
+    min-height: 130px;
+    z-index: 10;
+}
+#blab #avatar img {
+    width: 120px;
+    vertical-align: top;
+}
+#blab #say {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    border: 3px solid #d3d3d3;
+    border-radius: 6px;
+    margin: 4% 0 4% 25px;
+    padding: 15px;
+}
+#blab #say:before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: -25px;
+    border-style: solid;
+    border-width: 12px 25px 12px 0;
+    border-color: transparent #d3d3d3;
+}
+#blab #say:after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: -18px;
+    border-style: solid;
+    border-width: 8px 18px 8px 0;
+    border-color: transparent #fff;
+}
+
+.box {
+    margin-top: 15px;
+}
